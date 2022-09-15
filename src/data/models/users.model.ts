@@ -24,6 +24,29 @@ export const usersModel = new mongoose.Schema(
             type: Number,
             default: 1
         },
+
+        note_tl: {
+            type: String,
+            required: true,
+            default: 0
+        },
+        note_mn: {
+            type: String,
+            required: true,
+            default: 0
+        },
+        note_ad: {
+            type: String,
+            required: true,
+            default: 0
+        },
+        note_ab: {
+            type: String,
+            required: true,
+            default: 1
+        },
+
+
         projects: [
             {
                 type: mongoose.Schema.Types.ObjectId,

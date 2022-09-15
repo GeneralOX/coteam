@@ -4,6 +4,7 @@ import { container } from "../container";
 import cors from 'cors';
 
 import "./controllers/users.controller"
+import "./controllers/notes.controller"
 import "./controllers/auth.controller"
 import "./controllers/projects.controller"
 

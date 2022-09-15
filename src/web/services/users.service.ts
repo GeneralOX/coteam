@@ -54,7 +54,7 @@ export class UsersService {
 
     async Update(id: string, obj: any) {
         const { password } = obj;
-        if (password != "") {
+        if (password != undefined && password != "") {
             obj.password = await bcrypt.hash(password, 12);
         }
         return await this.repo.update(id, obj);
@@ -75,11 +75,11 @@ export class UsersService {
         return projects;
     }
 
-
     private groupBy(xs: any[], key: string) {
         return xs.reduce(function (rv, x) {
             (rv[x[key]] = rv[x[key]] || []).push(x);
             return rv;
         }, {});
     }
+
 }

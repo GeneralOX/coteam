@@ -8,7 +8,7 @@
     - add project               [✔️]
     - set project leader        [✔️]
     - add member to the team    [✔️]
-    - rate users                [❌]
+    - rate users                [✔️]
     - view users                [✔️]
     - add users                 [✔️]
     - update users              [✔️]
@@ -19,7 +19,7 @@
     - view project details      [✔️]
     - see team goals            [✔️]
     - edit team goals           [✔️]
-    - rate users                [❌]
+    - rate users                [✔️]
 
 # developer
 
